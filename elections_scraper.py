@@ -99,7 +99,7 @@ def create_a_dictionary(election):
         return dictionary
 
 
-def copy_to_excel(dictionary):
+def copy_to_csv(dictionary):
     if dictionary is None:
         message = True
         return message
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             print(f"your data has been downloaded".upper())
 
         for election in archive:
-            copy_to_excel(create_a_dictionary(election))
+            copy_to_csv(create_a_dictionary(election))
         print("your csv file should be ready".upper())
 
 
